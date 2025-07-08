@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grid, Flexbox & Image Gallery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @media (max-width: 768px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+      .gallery {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  </style>
+</head>
+<body class="p-4">
+  <header class="bg-blue-500 text-white p-4">
+    <h1 class="text-3xl">Grid, Flexbox & Image Gallery</h1>
+  </header>
+
+  <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 min-h-screen">
+    <section class="lg:col-span-2 flex">
+      <div class="p-4 bg-gradient-to-r from-red-200 to-red-300 w-1/2">Flexbox Item 1</div>
+      <div class="p-4 bg-gradient-to-r from-red-400 to-red-500 w-1/2">Flexbox Item 2</div>
+    </section>
+    <aside class="bg-green-200 p-4">Sidebar</aside>
+  </main>
+
+  <!-- New Image Gallery Section -->
+  <section class="gallery grid grid-cols-3 gap-4 mt-8 px-4">
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Mountain" class="w-full h-auto object-cover rounded" />
+    <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=600&q=80" alt="Beach" class="w-full h-auto object-cover rounded" />
+    <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=600&q=80" alt="Forest" class="w-full h-auto object-cover rounded" />
+    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=600&q=80" alt="Desert" class="w-full h-auto object-cover rounded" />
+    <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=600&q=80" alt="River" class="w-full h-auto object-cover rounded" />
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Ocean" class="w-full h-auto object-cover rounded" />
+  </section>
+
+  <footer class="bg-gray-800 text-white p-4 mt-8">
+    <p>&copy; 2024 John Doe's Blog</p>
+  </footer>
+</body>
+</html>

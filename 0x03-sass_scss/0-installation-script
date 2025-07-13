@@ -1,0 +1,20 @@
+Steps taken to install Sass on Windows:
+
+1.  Navigated to the alx-intermediate-frontend repository:
+    cd ~/OneDrive/Desktop/alx-intermediate-frontend
+
+2.  Created the project directory:
+    mkdir 0x03-sass_scss
+
+3.  Moved into the new directory:
+    cd 0x03-sass_scss
+
+4.  Attempted to install sass@3.7.4, which resulted in an ETARGET error (no matching version found):
+    npm install sass@3.7.4
+
+5.  Successfully installed the correct global version of Sass (1.77.4):
+    npm install -g sass@1.77.4
+
+6.  Verified Sass installation:
+    sass --version
+    (Output: 1.77.4 compiled with dart2js 3.4.2)
